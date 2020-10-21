@@ -1,0 +1,70 @@
+
+/*Styles sheet*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+/*Button style*/
+.accordion_button {
+    display: block;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    background: #ff8f0e;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/*Change color => pointer*/
+.active, .accordion_button:hover {
+    background-color: #d66e0c;
+}
+
+
+/*Triangle (right)*/
+.accordion_button::after {
+    content: '\25b4'; /* --> Representación hexadecimal del triangulo ¨25be¨*/
+    float: right;
+    transform: scale(1.5);
+}
+
+.link{
+    text-decoration: none;
+    color: #ff831d;
+}
+
+.accordion_button-active {
+    background: #ffb578af;
+}
+
+.accordion_button-active::after {
+    content: '\25be';
+}
+
+.accordion_content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    background: #ffbf7691;
+}
+
+.wrapper .accordion_content{
+    display: none;
+}
+
+.wrapper .active .accordion_content{
+    display: block;
+}
+
+
+.img{
+    border-radius: 20%;
+    margin: 0 50% 5% 0;
+    float: right;
+    width: 10%;
+    height: 10%;
+}
+
